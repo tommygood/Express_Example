@@ -4,7 +4,7 @@ const util = require("./../utilities/utilities.js");
 // processing request
 router.get('/', async function(req, res) {
     try {
-	res.sendFile(util.getParentPath(__dirname) + '/templates/main.html');
+	    res.sendFile(util.getParentPath(__dirname) + '/templates/main.html');
     }
     catch(e) {
         console.log(e);
