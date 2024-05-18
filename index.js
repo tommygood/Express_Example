@@ -14,10 +14,13 @@ app.use(cookieParser()); //解析 HTTP 請求的 cookie
 // routing
 // pages
 app.use("/main", require("./pages/main.js"));
+app.use("/login", require("./pages/login.js"));
+// api
+app.use("/api/login", require("./api/login.js"));
 // static files
 app.use('/js', express.static('./js'));
 app.use('/css', express.static('./css'));
 
 server.listen(5000, function () {
     console.log('Node server is running..');
-}); 
+});
