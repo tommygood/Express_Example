@@ -15,6 +15,8 @@ app.use(cookieParser()); //解析 HTTP 請求的 cookie
 // pages
 app.use("/main", require("./pages/main.js"));
 app.use("/login", require("./pages/login.js"));
+app.use("/apply", require("./pages/apply.js"));
+
 // api
 app.use("/api/login", require("./api/login.js"));
 // static files
